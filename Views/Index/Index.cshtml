@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/myApp.js"></script>
+</head>
+<body>
+    <div data-ng-app="myApp" data-ng-controller="empctrl"> 
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            <tr data-ng-repeat="emp in emps">
+                <td>{{emp.Id}}</td>
+                <td>{{emp.Name}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
